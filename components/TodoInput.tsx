@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Button, StyleSheet, TextInput, View } from "react-native";
+
+
 type Props = {
     onAdd: (text: string) => void;  
 };
@@ -19,8 +21,10 @@ export default function TodoInput({onAdd}: Props) {
                 value={text}
                 onChangeText={setText}
                 style={styles.input}
+                returnKeyType="done"
+                onSubmitEditing={handlePress}
             />
-            <Button title="Add" onPress={handlePress} />
+            <Button title="Add" onPress={handlePress} color="#35043eff"/>
         </View>
     );
 }const styles = StyleSheet.create({
@@ -32,7 +36,7 @@ export default function TodoInput({onAdd}: Props) {
     input:{
         flex: 1,
         borderWidth: 1,
-        borderColor: "#ccc",
+        borderColor: "#000000ff",
         padding: 8,
         marginRight: 10,
         borderRadius: 5,

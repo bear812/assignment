@@ -17,13 +17,14 @@ export default function TodoItem({text, onDelete}: Props) {
 }const styles = StyleSheet.create({
     item: {
         padding: 12,
-        backgroundColor: 'rgba(246, 255, 249, 1)',
+        backgroundColor: 'rgba(135, 55, 118, 1)',
         marginVertical: 5,
         marginHorizontal: 10,
         borderRadius: 6,  
     },
     text: {
         fontSize: 16,
+        color: "#fffafdff",
     },
     completed: {
         textDecorationLine: 'line-through',
