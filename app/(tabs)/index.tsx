@@ -27,7 +27,7 @@ return (
   container: {
     flex: 1,
     paddingTop: 40,
-    backgroundColor: "#f6edfcff",
+    backgroundColor: "#f7effcff",
   },
   title: {
     fontSize: 24,
